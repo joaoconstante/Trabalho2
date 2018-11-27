@@ -70,7 +70,7 @@ public class Dijkstra {
                 continue;
             for(z=FIRST_VERTEX; z<=LAST_VERTEX; z++)
                 if(successor(u,z) && !tight[z] && (distance[u]+weight[u][z]<distance[z])){
-                    distance[z]=distance[u]+weight[u][z]; //we've found a shortcut
+                    distance[z]=distance[u]+weight[u][z]; 
                     predecessor[z]=u;
                 }
         }      
